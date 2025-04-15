@@ -38,3 +38,4 @@ Route::middleware(['auth:api'])->group(function () {
     Route::delete('/students/{id}', [StudentController::class, 'destroy']);
 });
 
+Route::apiResource('students', StudentController::class);
